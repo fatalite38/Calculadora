@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="calculator-buttons">
+            <button class="limparDisplay" onclick="clean('')"><strong>ON</strong><p>OFF</p></button>
+            <button class="limparCalculo" onclick="clean('C')">C</button>
+            <button class="backspace" onclick="back('«')">«</button>
+            <button class="operadorMultiplicar" onclick="insert('*')">*</button>
+            <button class="tecla7" onclick="insert('7')">7</button>
+            <button class="tecla8" onclick="insert('8')">8</button>
+            <button class="tecla9" onclick="insert('9')">9</button>
+            <button class="operadorDividir" onclick="insert('/')">/</button>
+            <button class="tecla4" onclick="insert('4')">4</button>
+            <button class="tecla5" onclick="insert('5')">5</button>
+            <button class="tecla6" onclick="insert('6')">6</button>
+            <button class="operadorSubtrair" onclick="insert('-')">-</button>
+            <button class="tecla1" onclick="insert('1')">1</button>
+            <button class="tecla2" onclick="insert('2')">2</button>
+            <button class="tecla3" onclick="insert('3')">3</button>
+            <button class="operadorAdicionar" onclick="insert('+')">+</button>
+            <button class="operadorPotencia" onclick="insert('**')">**</button>
+            <button class="tecla0" onclick="insert('0')">0</button>
+            <button class="ponto" onclick="insert('.')">.</button>
+            <button class="igual" onclick="calcular('=')">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
